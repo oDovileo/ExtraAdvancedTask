@@ -16,12 +16,17 @@ namespace ExtraAdvancedTask
 
         public string Zipcode { get; set; }
 
-        public AddressInfo(string street, string suite, string city, string zipcode)
+        //[JsonProperty("geo")]
+        public GeoInfo Geo { get; set; }
+
+        public AddressInfo(string street, string suite, string city, string zipcode, GeoInfo geo)
         {
             Street = street;
             Suite = suite;
             City = city;
             Zipcode = zipcode;
+            Geo = geo;
         }
+
     }
 }

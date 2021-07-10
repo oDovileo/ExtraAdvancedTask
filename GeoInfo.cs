@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ExtraAdvancedTask
 {
-    class GeoInfo
+    public class GeoInfo
     {
         public string Lat { get; set; }
 
